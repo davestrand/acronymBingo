@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4566B5BB29E85F4100060D44 /* AcronymBingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5BA29E85F4100060D44 /* AcronymBingoApp.swift */; };
+		4566B5BD29E85F4100060D44 /* BingoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5BC29E85F4100060D44 /* BingoView.swift */; };
+		4566B5BF29E85F4200060D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4566B5BE29E85F4200060D44 /* Assets.xcassets */; };
+		4566B5C329E85F4200060D44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4566B5C229E85F4200060D44 /* Preview Assets.xcassets */; };
+		4566B5CA29E85FB600060D44 /* Acronym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5C929E85FB600060D44 /* Acronym.swift */; };
+		4566B5CC29E861AF00060D44 /* ASU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5CB29E861AF00060D44 /* ASU.swift */; };
+		4566B5CE29E872F700060D44 /* BingoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5CD29E872F700060D44 /* BingoCell.swift */; };
+		4566B5D229E8A5D800060D44 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5D129E8A5D800060D44 /* GameViewModel.swift */; };
+		4566B5D429E9D81200060D44 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5D329E9D81200060D44 /* TODO.swift */; };
+		4566B5D929E9DA8400060D44 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5D829E9DA8400060D44 /* MainView.swift */; };
+		4566B5DB29E9DAEF00060D44 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5DA29E9DAEF00060D44 /* ListView.swift */; };
+		4566B5DE29E9E9D100060D44 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5DD29E9E9D100060D44 /* ListCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4566B5B729E85F4100060D44 /* AcronymBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcronymBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4566B5BA29E85F4100060D44 /* AcronymBingoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymBingoApp.swift; sourceTree = "<group>"; };
+		4566B5BC29E85F4100060D44 /* BingoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoView.swift; sourceTree = "<group>"; };
+		4566B5BE29E85F4200060D44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4566B5C029E85F4200060D44 /* AcronymBingo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AcronymBingo.entitlements; sourceTree = "<group>"; };
+		4566B5C229E85F4200060D44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4566B5C929E85FB600060D44 /* Acronym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronym.swift; sourceTree = "<group>"; };
+		4566B5CB29E861AF00060D44 /* ASU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASU.swift; sourceTree = "<group>"; };
+		4566B5CD29E872F700060D44 /* BingoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoCell.swift; sourceTree = "<group>"; };
+		4566B5D129E8A5D800060D44 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		4566B5D329E9D81200060D44 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
+		4566B5D829E9DA8400060D44 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4566B5DA29E9DAEF00060D44 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		4566B5DD29E9E9D100060D44 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4566B5B429E85F4100060D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4566B5AE29E85F4100060D44 = {
+			isa = PBXGroup;
+			children = (
+				4566B5B929E85F4100060D44 /* AcronymBingo */,
+				4566B5B829E85F4100060D44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4566B5B829E85F4100060D44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4566B5B729E85F4100060D44 /* AcronymBingo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4566B5B929E85F4100060D44 /* AcronymBingo */ = {
+			isa = PBXGroup;
+			children = (
+				4566B5D329E9D81200060D44 /* TODO.swift */,
+				4566B5D529E9DA2300060D44 /* ViewModels */,
+				4566B5D729E9DA3700060D44 /* Models */,
+				4566B5D629E9DA2F00060D44 /* Views */,
+				4566B5BE29E85F4200060D44 /* Assets.xcassets */,
+				4566B5C029E85F4200060D44 /* AcronymBingo.entitlements */,
+				4566B5C129E85F4200060D44 /* Preview Content */,
+			);
+			path = AcronymBingo;
+			sourceTree = "<group>";
+		};
+		4566B5C129E85F4200060D44 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4566B5C229E85F4200060D44 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4566B5D529E9DA2300060D44 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4566B5D129E8A5D800060D44 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4566B5D629E9DA2F00060D44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4566B5BA29E85F4100060D44 /* AcronymBingoApp.swift */,
+				4566B5D829E9DA8400060D44 /* MainView.swift */,
+				4566B5BC29E85F4100060D44 /* BingoView.swift */,
+				4566B5DA29E9DAEF00060D44 /* ListView.swift */,
+				4566B5DC29E9E22C00060D44 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4566B5D729E9DA3700060D44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4566B5C929E85FB600060D44 /* Acronym.swift */,
+				4566B5CB29E861AF00060D44 /* ASU.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4566B5DC29E9E22C00060D44 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4566B5CD29E872F700060D44 /* BingoCell.swift */,
+				4566B5DD29E9E9D100060D44 /* ListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4566B5B629E85F4100060D44 /* AcronymBingo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4566B5C629E85F4200060D44 /* Build configuration list for PBXNativeTarget "AcronymBingo" */;
+			buildPhases = (
+				4566B5B329E85F4100060D44 /* Sources */,
+				4566B5B429E85F4100060D44 /* Frameworks */,
+				4566B5B529E85F4100060D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AcronymBingo;
+			productName = AcronymBingo;
+			productReference = 4566B5B729E85F4100060D44 /* AcronymBingo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4566B5AF29E85F4100060D44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					4566B5B629E85F4100060D44 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 4566B5B229E85F4100060D44 /* Build configuration list for PBXProject "AcronymBingo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4566B5AE29E85F4100060D44;
+			productRefGroup = 4566B5B829E85F4100060D44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4566B5B629E85F4100060D44 /* AcronymBingo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4566B5B529E85F4100060D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4566B5C329E85F4200060D44 /* Preview Assets.xcassets in Resources */,
+				4566B5BF29E85F4200060D44 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4566B5B329E85F4100060D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4566B5BD29E85F4100060D44 /* BingoView.swift in Sources */,
+				4566B5CE29E872F700060D44 /* BingoCell.swift in Sources */,
+				4566B5D929E9DA8400060D44 /* MainView.swift in Sources */,
+				4566B5DE29E9E9D100060D44 /* ListCell.swift in Sources */,
+				4566B5CC29E861AF00060D44 /* ASU.swift in Sources */,
+				4566B5D429E9D81200060D44 /* TODO.swift in Sources */,
+				4566B5CA29E85FB600060D44 /* Acronym.swift in Sources */,
+				4566B5D229E8A5D800060D44 /* GameViewModel.swift in Sources */,
+				4566B5BB29E85F4100060D44 /* AcronymBingoApp.swift in Sources */,
+				4566B5DB29E9DAEF00060D44 /* ListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4566B5C429E85F4200060D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4566B5C529E85F4200060D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4566B5C729E85F4200060D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AcronymBingo/AcronymBingo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AcronymBingo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hobjoblin.AcronymBingo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4566B5C829E85F4200060D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AcronymBingo/AcronymBingo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AcronymBingo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hobjoblin.AcronymBingo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4566B5B229E85F4100060D44 /* Build configuration list for PBXProject "AcronymBingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4566B5C429E85F4200060D44 /* Debug */,
+				4566B5C529E85F4200060D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4566B5C629E85F4200060D44 /* Build configuration list for PBXNativeTarget "AcronymBingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4566B5C729E85F4200060D44 /* Debug */,
+				4566B5C829E85F4200060D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4566B5AF29E85F4100060D44 /* Project object */;
+}
