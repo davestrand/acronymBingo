@@ -9,24 +9,29 @@ import SwiftUI
 
 struct MainView: View {
     
+    @StateObject private var vm: AcronymVM
+    @StateObject private var game = GameVM.shared
+
+    init(vm: AcronymVM) {
+        _vm = StateObject(wrappedValue: vm)
+        vm.loadItems()
+    }
+    
     var body: some View {
         TabView {
             
-            ListView()
+            ListView(vm: vm)
                 .tabItem {
                     Label("Acronyms", systemImage: "list.dash")
                 }
-            
-            BingoView()
+
+            BingoView(vm: vm)
                 .tabItem {
                     Label("Bingo", systemImage: "squareshape.split.3x3")
                 }
+            
         }
     }
 }
 
-struct TabView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
-}
+

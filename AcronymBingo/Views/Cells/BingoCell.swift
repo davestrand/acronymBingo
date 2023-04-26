@@ -8,29 +8,31 @@
 import SwiftUI
 
 struct BingoCell: View {
-    @ObservedObject var game = GameVM.shared
-    
+    @ObservedObject var vm: AcronymVM
+
     var i: Int
     var size: CGSize
     
     var body: some View {
         ZStack(){
-            Text(game.board[i].title)
+            
+            //FIXME:  CRASH I need to bring and update the game board from the cloud data.
+            Text(vm.gameBoard[i].abbreviation )
                 .lineLimit(3)
                 .font(.title)
                 .fontDesign(.monospaced)
                 .frame(width: size.width / 5.4, height: size.height / 6)
-                .background(game.board[i].isSelected ? Color("ASUGold") : Color("ASUMaroon"))
-                .foregroundColor(game.board[i].isSelected ? Color("ASUBlack") : Color("ASUWhite"))
+                .background(vm.gameBoard[i].isSelected ? Color("ASUGold") : Color("ASUMaroon"))
+                .foregroundColor(vm.gameBoard[i].isSelected ? Color("ASUBlack") : Color("ASUWhite"))
                 .padding(2)
                 .cornerRadius(3)
                 .onTapGesture {
-                    if game.board[i] != ASU.shared.centerAcronym {
-                        game.board[i].isSelected.toggle()
-                        game.checkForWin()
+                    if vm.gameBoard[i] != ASU.shared.centerAcronym {
+                        vm.gameBoard[i].isSelected.toggle()
+                        vm.checkForWin()
                     }
                 }
-            Color(game.board[i].isComplete ? .green : .clear)
+            Color(vm.gameBoard[i].isComplete ? .green : .clear)
                 .opacity(0.5)
                 .allowsHitTesting(false)
         }

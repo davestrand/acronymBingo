@@ -13,6 +13,8 @@ final class GameVM: ObservableObject {
     static let shared = GameVM()
     
     @Published var acronyms = ASU.shared.acronyms.sorted()
+    
+    //FIXME:  I need to bring and update the game board from the cloud data.
     @Published var board = ASU.shared.acronyms.map { $0 } //make a copy not a reference
     @Published var centerAcronym = ASU.shared.centerAcronym
     @Published var isGameStarted = false

@@ -19,6 +19,8 @@
 		4566B5D929E9DA8400060D44 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5D829E9DA8400060D44 /* MainView.swift */; };
 		4566B5DB29E9DAEF00060D44 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5DA29E9DAEF00060D44 /* ListView.swift */; };
 		4566B5DE29E9E9D100060D44 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5DD29E9E9D100060D44 /* ListCell.swift */; };
+		45A03DDE29F86BAA00F35BEF /* AcronymVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A03DDD29F86BAA00F35BEF /* AcronymVM.swift */; };
+		45A03DE029F99DB400F35BEF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A03DDF29F99DB400F35BEF /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		4566B5D829E9DA8400060D44 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4566B5DA29E9DAEF00060D44 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		4566B5DD29E9E9D100060D44 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		45A03DDD29F86BAA00F35BEF /* AcronymVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymVM.swift; sourceTree = "<group>"; };
+		45A03DDF29F99DB400F35BEF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				4566B5D129E8A5D800060D44 /* GameViewModel.swift */,
+				45A03DDD29F86BAA00F35BEF /* AcronymVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			children = (
 				4566B5CD29E872F700060D44 /* BingoCell.swift */,
 				4566B5DD29E9E9D100060D44 /* ListCell.swift */,
+				45A03DDF29F99DB400F35BEF /* DetailView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -204,7 +210,9 @@
 				4566B5CA29E85FB600060D44 /* Acronym.swift in Sources */,
 				4566B5D229E8A5D800060D44 /* GameViewModel.swift in Sources */,
 				4566B5BB29E85F4100060D44 /* AcronymBingoApp.swift in Sources */,
+				45A03DE029F99DB400F35BEF /* DetailView.swift in Sources */,
 				4566B5DB29E9DAEF00060D44 /* ListView.swift in Sources */,
+				45A03DDE29F86BAA00F35BEF /* AcronymVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,9 +334,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AcronymBingo/AcronymBingo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AcronymBingo/Preview Content\"";
+				DEVELOPMENT_TEAM = XWWF34NM2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -362,9 +372,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AcronymBingo/AcronymBingo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AcronymBingo/Preview Content\"";
+				DEVELOPMENT_TEAM = XWWF34NM2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
