@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		454DA4EB2A01780E0084EF4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454DA4EA2A01780E0084EF4A /* Assets.xcassets */; };
 		4566B5BB29E85F4100060D44 /* AcronymBingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5BA29E85F4100060D44 /* AcronymBingoApp.swift */; };
 		4566B5BD29E85F4100060D44 /* BingoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5BC29E85F4100060D44 /* BingoView.swift */; };
 		4566B5BF29E85F4200060D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4566B5BE29E85F4200060D44 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		454DA4EA2A01780E0084EF4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		4566B5B729E85F4100060D44 /* AcronymBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcronymBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4566B5BA29E85F4100060D44 /* AcronymBingoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymBingoApp.swift; sourceTree = "<group>"; };
 		4566B5BC29E85F4100060D44 /* BingoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				4566B5D729E9DA3700060D44 /* Models */,
 				4566B5D629E9DA2F00060D44 /* Views */,
 				4566B5BE29E85F4200060D44 /* Assets.xcassets */,
+				454DA4EA2A01780E0084EF4A /* Assets.xcassets */,
 				4566B5C029E85F4200060D44 /* AcronymBingo.entitlements */,
 				4566B5C129E85F4200060D44 /* Preview Content */,
 			);
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4566B5C329E85F4200060D44 /* Preview Assets.xcassets in Resources */,
+				454DA4EB2A01780E0084EF4A /* Assets.xcassets in Resources */,
 				4566B5BF29E85F4200060D44 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +341,7 @@
 				DEVELOPMENT_TEAM = XWWF34NM2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Acronyms;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -375,6 +380,7 @@
 				DEVELOPMENT_TEAM = XWWF34NM2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Acronyms;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
