@@ -16,13 +16,12 @@ enum RecordType: String {
 
 class AcronymVM: ObservableObject {
     private var db: CKDatabase
-    private var container: CKContainer
-    
+    private var container = CKContainer(identifier: "iCloud.com.hobjoblin.acronyms")
+
     @Published var acronyms: [Acronym] = []
     @Published var gameBoard: [Acronym] = []
 
-    init(container: CKContainer) {
-        self.container = container
+    init() {
         self.db = self.container.publicCloudDatabase
     }
     

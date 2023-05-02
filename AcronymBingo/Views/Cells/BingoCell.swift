@@ -16,7 +16,6 @@ struct BingoCell: View {
     var body: some View {
         ZStack(){
             
-            //FIXME:  CRASH I need to bring and update the game board from the cloud data.
             Text(vm.gameBoard[i].abbreviation )
                 .lineLimit(3)
                 .font(.title)

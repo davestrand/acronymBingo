@@ -10,11 +10,10 @@ import CloudKit
 @main
 struct AcronymBingoApp: App {
     
-    let container = CKContainer(identifier: "iCloud.com.hobjoblin.acronyms")
     
     var body: some Scene {
         WindowGroup {
-            MainView(vm: AcronymVM(container: container))
+            MainView(vm: AcronymVM())
         }
     }
 }

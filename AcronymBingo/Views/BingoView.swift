@@ -11,7 +11,6 @@ struct BingoView: View {
     
     @ObservedObject var vm: AcronymVM
 
-//    @StateObject private var game = GameVM.shared
     @State private var cellSize: CGSize = .zero
     @State private var selected: [Int] = []
     

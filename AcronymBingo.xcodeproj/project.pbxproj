@@ -14,7 +14,6 @@
 		4566B5CA29E85FB600060D44 /* Acronym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5C929E85FB600060D44 /* Acronym.swift */; };
 		4566B5CC29E861AF00060D44 /* ASU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5CB29E861AF00060D44 /* ASU.swift */; };
 		4566B5CE29E872F700060D44 /* BingoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5CD29E872F700060D44 /* BingoCell.swift */; };
-		4566B5D229E8A5D800060D44 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5D129E8A5D800060D44 /* GameViewModel.swift */; };
 		4566B5D429E9D81200060D44 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5D329E9D81200060D44 /* TODO.swift */; };
 		4566B5D929E9DA8400060D44 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5D829E9DA8400060D44 /* MainView.swift */; };
 		4566B5DB29E9DAEF00060D44 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566B5DA29E9DAEF00060D44 /* ListView.swift */; };
@@ -33,7 +32,6 @@
 		4566B5C929E85FB600060D44 /* Acronym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronym.swift; sourceTree = "<group>"; };
 		4566B5CB29E861AF00060D44 /* ASU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASU.swift; sourceTree = "<group>"; };
 		4566B5CD29E872F700060D44 /* BingoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoCell.swift; sourceTree = "<group>"; };
-		4566B5D129E8A5D800060D44 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		4566B5D329E9D81200060D44 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
 		4566B5D829E9DA8400060D44 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4566B5DA29E9DAEF00060D44 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 		4566B5D529E9DA2300060D44 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4566B5D129E8A5D800060D44 /* GameViewModel.swift */,
 				45A03DDD29F86BAA00F35BEF /* AcronymVM.swift */,
 			);
 			path = ViewModels;
@@ -208,7 +205,6 @@
 				4566B5CC29E861AF00060D44 /* ASU.swift in Sources */,
 				4566B5D429E9D81200060D44 /* TODO.swift in Sources */,
 				4566B5CA29E85FB600060D44 /* Acronym.swift in Sources */,
-				4566B5D229E8A5D800060D44 /* GameViewModel.swift in Sources */,
 				4566B5BB29E85F4100060D44 /* AcronymBingoApp.swift in Sources */,
 				45A03DE029F99DB400F35BEF /* DetailView.swift in Sources */,
 				4566B5DB29E9DAEF00060D44 /* ListView.swift in Sources */,

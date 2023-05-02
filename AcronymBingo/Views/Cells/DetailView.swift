@@ -26,9 +26,7 @@ struct DetailView: View {
                 .font(.body)
                 .disableAutocorrection(true)
                
-            
-            //Text(selectedAcronym.id)
-            
+                        
             Button("SAVE") {
                 print("update")
                 vm.update(acronym: selectedAcronym)
@@ -47,9 +45,6 @@ struct DetailView: View {
             .padding()
 
         }.padding()
-        
-//        Text(selectedAcronym.abbreviation).font(.largeTitle)
-//        Text(selectedAcronym.description)
     }
 }
 

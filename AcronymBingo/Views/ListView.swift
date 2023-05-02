@@ -11,7 +11,6 @@ struct ListView: View {
     
     @ObservedObject var vm: AcronymVM
     
-    //@ObservedObject var game = GameVM.shared
     @State private var isAdding = false
     @State private var searchText = ""
     @State private var newAcronym: Acronym = Acronym(id: UUID().uuidString, abbreviation: "", kind: .concept, description: "")

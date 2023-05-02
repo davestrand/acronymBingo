@@ -13,10 +13,6 @@ struct Acronym: Equatable, Comparable, Hashable {
     static func < (lhs: Acronym, rhs: Acronym) -> Bool {
         lhs.abbreviation < rhs.abbreviation
     }
-    
-//    static func == (lhs: Acronym, rhs: Acronym) -> Bool {
-//        lhs.id == rhs.id
-//    }
 
     //var recordId: CKRecord.ID
     var id: String
@@ -40,20 +36,6 @@ struct Acronym: Equatable, Comparable, Hashable {
         return ["id": id, "abbreviation": abbreviation, "description": description]
     }
     
-//    static func fetch(completion: @escaping (Result<Acronym, Error>) -> ()) {
-//        let pred = NSPredicate(value: true)
-//        let sort = NSSortDescriptor(key: "creationDate", ascending: false)
-//        let query = CKQuery(recordType: "acronym", predicate: pred)
-//        query.sortDescriptors = [sort]
-//
-//        let operation = CKQueryOperation(query: query)
-//        operation.desiredKeys = ["text"]
-//        operation.resultsLimit = 50
-//        operation.queryResultBlock =
-//        }
-//
-//        CKContainer.default().publicCloudDatabase.add(operation)
-//    }
     
     static func fromRecord(_ record: CKRecord) -> Acronym? {
         guard let id = record.value(forKey: "id") as? String, let abbv = record.value(forKey: "abbreviation") as? String, let desc = record.value(forKey: "description") as? String else {

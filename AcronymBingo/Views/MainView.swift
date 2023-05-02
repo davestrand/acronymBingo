@@ -10,7 +10,6 @@ import SwiftUI
 struct MainView: View {
     
     @StateObject private var vm: AcronymVM
-    @StateObject private var game = GameVM.shared
 
     init(vm: AcronymVM) {
         _vm = StateObject(wrappedValue: vm)
