@@ -180,6 +180,13 @@ class AcronymVM: ObservableObject {
     func shuffleBoard() {
         gameBoard = acronyms.map { $0 } //make a copy not a reference
         gameBoard = gameBoard.shuffled()
+        updateBoardWithFreeSpace()
+    }
+    
+    
+    func updateBoardWithFreeSpace(){
+        gameBoard[12].abbreviation = "FREE SPACE"
+        gameBoard[12].isSelected = true
     }
 
     func checkForWin() {

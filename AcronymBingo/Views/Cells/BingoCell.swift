@@ -9,7 +9,8 @@ import SwiftUI
 
 struct BingoCell: View {
     @ObservedObject var vm: AcronymVM
-
+    @Binding var searchText: String
+    
     var i: Int
     var size: CGSize
     
@@ -18,15 +19,16 @@ struct BingoCell: View {
             
             Text(vm.gameBoard[i].abbreviation )
                 .lineLimit(3)
-                .font(.title)
+                .font(.headline)
                 .fontDesign(.monospaced)
                 .frame(width: size.width / 5.4, height: size.height / 6)
                 .background(vm.gameBoard[i].isSelected ? Color("ASUGold") : Color("ASUMaroon"))
                 .foregroundColor(vm.gameBoard[i].isSelected ? Color("ASUBlack") : Color("ASUWhite"))
                 .padding(2)
                 .cornerRadius(3)
+                .border(Color("ASUBlue"), width: vm.gameBoard[i].abbreviation.contains(searchText.uppercased()) ? 6 : 0)
                 .onTapGesture {
-                    if vm.gameBoard[i] != ASU.shared.centerAcronym {
+                    if vm.gameBoard[i] != vm.gameBoard[12] {
                         vm.gameBoard[i].isSelected.toggle()
                         vm.checkForWin()
                     }

@@ -13,6 +13,17 @@ struct BingoView: View {
 
     @State private var cellSize: CGSize = .zero
     @State private var selected: [Int] = []
+    @State private var searchText = ""
+
+    var searchResults: [Acronym] {
+        if searchText.isEmpty {
+            return vm.gameBoard
+        } else {
+            return vm.gameBoard.filter {
+                $0.abbreviation.contains(searchText.uppercased())
+            }
+        }
+    }
     
     var body: some View {
         NavigationStack {
@@ -27,39 +38,39 @@ struct BingoView: View {
                         }
                         
                         GridRow {
-                            BingoCell(vm: vm, i:0, size: cellSize)
-                            BingoCell(vm: vm, i:1, size: cellSize)
-                            BingoCell(vm: vm, i:2, size: cellSize)
-                            BingoCell(vm: vm, i:3, size: cellSize)
-                            BingoCell(vm: vm, i:4, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText, i:0, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:1, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:2, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:3, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:4, size: cellSize)
                         }
                         GridRow {
-                            BingoCell(vm: vm, i:5, size: cellSize)
-                            BingoCell(vm: vm, i:6, size: cellSize)
-                            BingoCell(vm: vm, i:7, size: cellSize)
-                            BingoCell(vm: vm, i:8, size: cellSize)
-                            BingoCell(vm: vm, i:9, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:5, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:6, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:7, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:8, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:9, size: cellSize)
                         }
                         GridRow {
-                            BingoCell(vm: vm, i:10, size: cellSize)
-                            BingoCell(vm: vm, i:11, size: cellSize)
-                            BingoCell(vm: vm, i:12, size: cellSize)
-                            BingoCell(vm: vm, i:13, size: cellSize)
-                            BingoCell(vm: vm, i:14, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:10, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:11, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:12, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:13, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:14, size: cellSize)
                         }
                         GridRow {
-                            BingoCell(vm: vm, i:15, size: cellSize)
-                            BingoCell(vm: vm, i:16, size: cellSize)
-                            BingoCell(vm: vm, i:17, size: cellSize)
-                            BingoCell(vm: vm, i:18, size: cellSize)
-                            BingoCell(vm: vm, i:19, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:15, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:16, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:17, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:18, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:19, size: cellSize)
                         }
                         GridRow {
-                            BingoCell(vm: vm, i:20, size: cellSize)
-                            BingoCell(vm: vm, i:21, size: cellSize)
-                            BingoCell(vm: vm, i:22, size: cellSize)
-                            BingoCell(vm: vm, i:23, size: cellSize)
-                            BingoCell(vm: vm, i:24, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:20, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:21, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:22, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:23, size: cellSize)
+                            BingoCell(vm: vm, searchText: $searchText,i:24, size: cellSize)
                         }
                     }
                 }
@@ -80,6 +91,7 @@ struct BingoView: View {
                         vm.isGameStarted = true
                     }
                 }
+                .searchable(text: $searchText)
             }
         }
     }
