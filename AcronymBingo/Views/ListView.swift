@@ -35,7 +35,7 @@ struct ListView: View {
                                 .onTapGesture {
                                     print("show the detailed view")
                                     selectedAcronym = Acronym(id: a.id, abbreviation: a.abbreviation, description: a.description)
-                                    isShowingDetailedView = true
+                                     isShowingDetailedView = true
                                 }
                                 
                         }
@@ -51,29 +51,32 @@ struct ListView: View {
                         DetailView(vm: vm, selectedAcronym: $selectedAcronym, isShowingDetailedView: $isShowingDetailedView)
                     }
                 }
-                .toolbar {
-                    Button {
-                        newAcronym = Acronym(id: UUID().uuidString, abbreviation: "", kind: .concept, description: "")
-                        isAdding = true
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                    .alert("Add New Acronym", isPresented: $isAdding, actions: {
-                        TextField("What is the acronym?", text: $newAcronym.abbreviation)
-                            .textInputAutocapitalization(.characters)
-                            .disableAutocorrection(true)
-
-                        TextField("What does it mean?", text: $newAcronym.description)
-                            .disableAutocorrection(true)
-
-                        Button("Add", action: {
-                            add(newAcronym)
-                            vm.saveItem(id: newAcronym.id, abbv: newAcronym.abbreviation, desc: newAcronym.description)
-                        })
-                        Button("Cancel", role: .cancel, action: {})
-                    }
-                    )
-                }
+            
+            //TODO: This is to enable a button at the top of the list to add new acronyms.  For now let's just use the cloudkit dashboard so we don't have people messing up the data.  But later we can allow admin access from the app.
+            
+//                .toolbar {
+//                    Button {
+//                        newAcronym = Acronym(id: UUID().uuidString, abbreviation: "", kind: .concept, description: "")
+//                        isAdding = true
+//                    } label: {
+//                        Image(systemName: "plus")
+//                    }
+//                    .alert("Add New Acronym", isPresented: $isAdding, actions: {
+//                        TextField("What is the acronym?", text: $newAcronym.abbreviation)
+//                            .textInputAutocapitalization(.characters)
+//                            .disableAutocorrection(true)
+//
+//                        TextField("What does it mean?", text: $newAcronym.description)
+//                            .disableAutocorrection(true)
+//
+//                        Button("Add", action: {
+//                            add(newAcronym)
+//                            vm.saveItem(id: newAcronym.id, abbv: newAcronym.abbreviation, desc: newAcronym.description)
+//                        })
+//                        Button("Cancel", role: .cancel, action: {})
+//                    }
+//                    )
+//                }
         }
     }
     
