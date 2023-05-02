@@ -92,6 +92,9 @@ struct BingoView: View {
                     }
                 }
                 .searchable(text: $searchText)
+                .disableAutocorrection(true)
+                .textInputAutocapitalization(.characters)
+                
             }
         }
     }
